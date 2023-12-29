@@ -9,6 +9,7 @@ const port = 5000
 //Define express setting
 
 app.set('view engine', 'ejs')
+app.use('/assets', express.static(__dirname + '/assets'));
 
 
 app.get('/', (req, res) =>{
